@@ -34,7 +34,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 #driver = Driver(uc=True)
 #driver = get_driver("firefox")
 #options = webdriver.FirefoxOptions()
-driver = webdriver.Firefox(executable_path=GeckoDriverManager().install(), options=options)
+driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())#, options=options)
 driver.implicitly_wait(10)
             
 driver.maximize_window()
